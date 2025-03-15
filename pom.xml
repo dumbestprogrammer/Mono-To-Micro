@@ -9,7 +9,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.4.3</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> 
 	</parent>
 
 	<groupId>tool</groupId>
@@ -20,10 +20,10 @@
 
 	<properties>
 		<java.version>17</java.version>
-		<spring-ai.version>0.8.1</spring-ai.version>  <!-- Correct Spring AI version -->
+		<spring-ai.version>0.8.1</spring-ai.version> 
 	</properties>
 
-	<!-- Add Spring Milestone repository -->
+	
 	<repositories>
 		<repository>
 			<id>spring-milestones</id>
@@ -89,7 +89,7 @@
 		<dependency>
 			<groupId>com.itextpdf</groupId>
 			<artifactId>itext7-core</artifactId>
-			<version>7.2.5</version> <!-- Or the version you're using -->
+			<version>7.2.5</version> 
 			<scope>compile</scope>
 		</dependency>
 
@@ -130,12 +130,7 @@
 
 
 
-		<!-- Lombok (for reducing boilerplate code) -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<scope>provided</scope>
-		</dependency>
+		
 
 		<!-- Testing -->
 		<dependency>
