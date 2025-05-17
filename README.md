@@ -1,27 +1,16 @@
-## License
-[![AGPL-3.0 License](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
-
-This project is licensed under the **GNU AGPL-3.0 License** © 2025-2027 Anukul Kumar. See [LICENSE](./LICENSE) for more information.
+[![AGPL-3.0 License](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html) This project is licensed under the **GNU AGPL-3.0 License** © 2025-2027 Anukul Kumar. See [LICENSE](./LICENSE) for more information.
 
 <hr>
 
-
-
 # Monolith to Microservices Analyzer 🚀
-
-## Overview
 ### Why I Built This Project ?
 - While converting one of my **monolithic projects** to **microservices**, <br>
 I realized that determining how many microservices to create and which classes should belong to each service was incredibly difficult. <br>
 - There was no clear direction—just assumptions, trial-and-error, and no solid foundation.
-<br>
-
 - AI can help, but manually copying and pasting code to an AI model, explaining folder structures, flow, and dependencies, is tedious.
 **If AI forgets previous contexts, you start from scratch**.
 
 <br>
-<br>
-
 
 #### So, I built this tool! You upload your monolithic project (as a ZIP file), and AI analyzes it intelligently, providing:
 - *How many microservices to create*
@@ -40,6 +29,14 @@ Once you get a structured breakdown, you can use AI (ChatGPT, Claude, Phind, etc
 <br>
 
 
+## Key Features
+- **Intelligent Microservice Breakdown:** Determines the number of microservices and suggests folder structures, controllers, services, and repositories.
+- **API & Database Recommendations:** Provides REST API endpoints and recommends databases (e.g., MySQL, PostgreSQL, NoSQL) with table designs.
+- **PDF Report Generation:** Delivers a structured, downloadable PDF report with the analysis.
+- **Simple UI:** Drag-and-drop upload interface with progress indicators.
+
+<br>
+
 ## Tech Stack 🛠️
 - **Backend:** Java 17, Spring Boot, Spring AI (OpenAI API)
 - **Frontend:** HTML, CSS, JavaScript (Basic UI)
@@ -47,9 +44,8 @@ Once you get a structured breakdown, you can use AI (ChatGPT, Claude, Phind, etc
 - **PDF Generation:** iText 7 (for structured reports)
 
 <br>
-<br>
 
-
+<!--
 ## Features 🏗️
 
 - **Upload a Monolithic Java Project.**
@@ -265,7 +261,14 @@ public ResponseEntity<byte[]> analyzeZipFile(@RequestParam("file") MultipartFile
 
 
 
+-->
 
+## How to Use
+- **Upload:** Drag and drop your monolithic Java project as a ZIP file.
+- **Analyze:** The tool extracts and analyzes the Java files using AI.
+- **Download:** Receive a PDF report with microservices recommendations.
+
+<br>
 
 
 ## API Documentation 📡
@@ -309,6 +312,7 @@ public ResponseEntity<byte[]> analyzeZipFile(@RequestParam("file") MultipartFile
   
 <br>
 
+<!--
 
 ## How It Works ⚙️
 
@@ -345,6 +349,17 @@ public ResponseEntity<byte[]> analyzeZipFile(@RequestParam("file") MultipartFile
 <br>
 
 - User clicks "**Get PDF**" button → Downloads report
+
+<br>
+
+-->
+
+## Workflow
+- **Upload:** User submits a ZIP file.
+- **Extract:** Java files are extracted safely.
+- **Analyze:** Code is sent to OpenAI for microservices analysis.
+- **Report:** AI output is converted to a PDF.
+- **Download:** User downloads the PDF report.
 
 <br>
 
@@ -410,7 +425,7 @@ https://github.com/user-attachments/assets/67685c60-4837-4320-b28d-dad59f30171d
 
 
 
-
+<!--
 
 
 <br>
@@ -441,7 +456,8 @@ While this project currently focuses only on analyzing Java-based monolithic app
 <br>
 
 <hr>
-
+-->
+<hr>
 
 # Contact
 For any questions, feedback, or contributions, feel free to reach out: <br>
